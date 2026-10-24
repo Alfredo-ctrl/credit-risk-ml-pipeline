@@ -1,0 +1,49 @@
+{
+  "dataset_rows": 1000,
+  "num_features": 20,
+  "train_samples": 700,
+  "test_samples": 300,
+  "models": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.7833,
+      "recall": 0.5333,
+      "precision": 0.6761,
+      "f1": 0.5963,
+      "roc_auc": 0.8011
+    },
+    {
+      "model": "Decision Tree",
+      "accuracy": 0.6367,
+      "recall": 0.3667,
+      "precision": 0.3882,
+      "f1": 0.3771,
+      "roc_auc": 0.6595
+    },
+    {
+      "model": "SVM (RBF Kernel)",
+      "accuracy": 0.7767,
+      "recall": 0.4111,
+      "precision": 0.7255,
+      "f1": 0.5248,
+      "roc_auc": 0.8022
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.7633,
+      "recall": 0.4,
+      "precision": 0.6792,
+      "f1": 0.5035,
+      "roc_auc": 0.7828
+    }
+  ],
+  "grid_search_best_params": {
+    "clf__C": 0.1,
+    "clf__penalty": "l2",
+    "clf__solver": "lbfgs"
+  },
+  "grid_search_cv_roc_auc": 0.7734,
+  "tuned_test_roc_auc": 0.8092,
+  "tuned_test_recall": 0.4778,
+  "pca_explained_variance_pct": 24.8
+}
